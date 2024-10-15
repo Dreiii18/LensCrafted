@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensCrafted is a curated collection of photographic artistry from around the world. Our platform serves as a tribet to the art form, recognizing the skill, creativity, and dedication of photographers who transform ordinary scenes into extraordinary visual narratives.">
+    <link rel="icon" href="images/polaroid-line.png" sizes="32x32" type="image/png">
+    <title>LensCrafted</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo1.png" alt="LensCrafted Logo" width="250" height="53">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galleries.html">Galleries</a></li>
+                    <li class="photographers-navbar">Photographers</li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="peerreview.html">Peer Review</a></li>
+                </ul>
+            </div>
+            <div class="photographers-navbar-links">
+                <ul>
+                    <li class="hide">Photographers</li>
+                    <li><a href="photographers.html">Ansel Adams</a></li>
+                    <li><a href="photographers2.html">Don McCullin</a></li>
+                    <li><a href="photographers3.html">Imogen Cunningham</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-message">
+            <h1>Welcome to LensCrafted: Capturing Life's Beauty!</h1>
+            <p>
+                Discover the art of visual storytelling through our lens. Dive into a world where moments are frozen in time, where every frame tells a unique story. Whether you're a passionate photographer, an art enthusiast, or someone seeking inspiration, you've arrived at the perfect destination.
+            </p>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <main>
+            <div class="slider">
+                <div class="rotating-photos">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+
+                    <div class="slide first">
+                        <img src="images/home/home-photo.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/home/home-photo1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/home/home-photo2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/home/home-photo3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/home/home-photo4.jpeg" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                  </div>
+            </div>
+
+            <section class="featured-photographers">
+                <h2 class="header">FEATURED PHOTOGRAPHERS</h2>
+                
+                <a href="photographers.html">
+                    <div class="card">
+                        <span><img src="images/Ansel_Adams.jpg" alt="Ansel_Adams.jpg" width="220" height="270"></span>
+                        <h4>Ansel Adams</h4>
+                    </div>
+                </a>
+
+                <a href="photographers2.html" target="_blank">
+                    <div class="card">
+                        <span><img src="images/Don_McCullin.jpg" alt="Don_McCullin.jpg" width="220" height="270"></span>
+                        <h4>Don McCullin</h4>
+                    </div>
+                </a>
+
+                <a href="photographers3.html" target="_blank">
+                    <div class="card">
+                        <span><img src="images/Imogen_cunningham.jpeg" alt="Imogen_cunningham.jpg" width="220" height="270"></span>
+                        <h4>Imogen Cunningham</h4>
+                    </div>
+                </a>
+            </section>
+            <div class="photographer-list"><a href="photographerlist.html">
+                See More <br>
+                <i class="ri-arrow-down-s-line"></i>
+            </a></div>
+        </main>
+    </div>
+
+    <div class="player-controls">
+        <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy; 2023 LensCrafted. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 5){
+            counter = 1;
+            }
+        }, 5000);
+    </script> -->
+</body>
+</html>

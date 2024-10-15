@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LensCrafted is a curated collection of photographic artistry from around the world. Our platform serves as a tribet to the art form, recognizing the skill, creativity, and dedication of photographers who transform ordinary scenes into extraordinary visual narratives.">
+    <link rel="icon" href="images/polaroid-line.png" sizes="32x32" type="image/png">
+    <title>LensCrafted</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo1.png" alt="LensCrafted Logo" width="250" height="53">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galleries.html">Galleries</a></li>
+                    <li class="photographers-navbar">Photographers</li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="peerreview.html">Peer Review</a></li>
+                </ul>
+            </div>
+            <div class="photographers-navbar-links">
+                <ul>
+                    <li class="hide">Photographers</li>
+                    <li><a href="photographers.html">Ansel Adams</a></li>
+                    <li><a href="photographers2.html">Don McCullin</a></li>
+                    <li><a href="photographers3.html">Imogen Cunningham</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-message">
+            <h1>Welcome to LensCrafted: Capturing Life's Beauty!</h1>
+            <p>
+                Discover the art of visual storytelling through our lens. Dive into a world where moments are frozen in time, where every frame tells a unique story. Whether you're a passionate photographer, an art enthusiast, or someone seeking inspiration, you've arrived at the perfect destination.
+            </p>
+        </div>
+    </header>
+    
+    <div id="wrapper">
+        <video src="videos/bg.mp4" autoplay loop muted></video>
+        <main>
+            <h1>LIST OF PHOTOGRAPHERS</h1>
+ 
+            <table>
+                <tr>
+                    <th>Photographers</th>
+                    <th>Photography Style</th>
+                    <th>Nationality</th>
+                </tr>
+
+                <tr>
+                    <td>Erik Babnik</td>
+                    <td>Landscape Photography</td>
+                    <td>American</td>
+                </tr>
+
+                <tr>
+                    <td>Henri Cartier-Bresson</td>
+                    <td>Street Photography</td>
+                    <td>French</td>
+                </tr>
+
+                <tr>
+                    <td>Philippe Halsman</td>
+                    <td>Portrait Photography</td>
+                    <td>American</td>
+                </tr>
+
+                <tr>
+                    <td>Frauke Hameister</td>
+                    <td>Travel Photography</td>
+                    <td>German</td>
+                </tr>
+
+                <tr>
+                    <td>Franz Lanting</td>
+                    <td>Wildlife Photography</td>
+                    <td>Dutch</td>
+                </tr>
+
+                <tr>
+                    <td>Brassaï</td>
+                    <td>Night Photography</td>
+                    <td>Hungarian-French</td>
+                </tr>
+
+                <tr>
+                    <td>Man Ray</td>
+                    <td>Fashion & Portrait Photography</td>
+                    <td>American</td>
+                </tr>
+
+                <tr>
+                    <td>Jackie Alpers</td>
+                    <td>Food Photography</td>
+                    <td>American</td>
+                </tr>
+
+                <tr>
+                    <td>Kah-Wai Lin</td>
+                    <td>Astrophotography</td>
+                    <td>Malaysian</td>
+                </tr>
+
+                <tr>
+                    <td>Cafa Liu</td>
+                    <td>Wedding Photography</td>
+                    <td>Chinese-Canadian</td>
+                </tr>
+
+                <tr>
+                    <td>Geoerge Digalakis</td>
+                    <td>Long-Exposure Photography</td>
+                    <td>Greek</td>
+                </tr>
+            </table>
+            
+            <h4>Have Any Photographers to Suggest?</h4><br>
+            <form action="https://webdevbasics.net/scripts/demo.php." method="post">
+
+                <label for="photographerName">Photographer Name:</label>
+                <input type="text" name="photographerName" id="photographerName" required>
+
+                <label for="photographyStyle">Photography Style: </label>
+                <input type="text" name="photographyStyle" id="photographyStyle" required>
+
+                <label for="nationality">Nationality: </label>
+                <input type="text" name="nationality" id="nationality" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="copyright">
+            Copyright &copy; 2023 LensCrafted. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
